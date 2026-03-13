@@ -11,10 +11,10 @@
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="name">WSDL</value>
-  <value name="build">10.7.0.0.-576116159</value>
+  <value name="build">10.11.0.0.391838763</value>
   <null name="description"/>
-  <value name="time">2022-05-12 11:56:52 IST</value>
+  <value name="time">2023-12-07 14:50:02 IST</value>
   <value name="jvm_version">1.8.0_322</value>
-  <value name="publisher">SAG-3HXQKG3</value>
+  <value name="publisher">10.121.65.13</value>
   <value name="patch_nums"></value>
 </Values>

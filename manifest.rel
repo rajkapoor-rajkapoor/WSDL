@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">WSDL</value>
+  <value name="version">1.0</value>
+  <value name="build">10.11.0.0.391838763</value>
+  <value name="patch_nums"></value>
+  <null name="description"/>
+  <value name="target_pkg_version">1.0</value>
+  <value name="jvm_version">1.8.0_322</value>
+  <value name="source_server_version">10.11.0.0</value>
+  <value name="target_server_version">10.11.0.0</value>
+  <value name="time">2023-12-07 14:50:02 IST</value>
+  <value name="type">full</value>
+  <value name="retainPatchHistory">yes</value>
+  <value name="target_pkg_name">WSDL</value>
+  <value name="publisher">10.121.65.13</value>
+</Values>

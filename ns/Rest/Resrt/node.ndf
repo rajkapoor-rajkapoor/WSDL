@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">restResource</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">Rest:Resrt</value>
+  <value name="node_pkg">WSDL</value>
+  <value name="is_public">false</value>
+  <record name="restResource" javaclass="com.wm.util.Values">
+    <value name="resourceName">Resrt</value>
+    <value name="nsName">Rest:Resrt</value>
+    <array name="operations" type="record" depth="1">
+    </array>
+  </record>
+  <null name="originUri"/>
+  <value name="resourceName">Resrt</value>
+  <Boolean name="modifiable">true</Boolean>
+  <value name="srcdoctypename">WSDL.Calculator_.docTypes:CalculatorSoap_Add_Input</value>
+  <value name="assocdoctypename">Rest.Resrt_.docTypes:Resrt</value>
+  <Boolean name="isjsonapi">false</Boolean>
+  <array name="attributes" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="attributeName">tns:Add</value>
+      <value name="attributeType">Document</value>
+      <number name="objectWrapperType" type="Integer">0</number>
+      <record name="actualField" javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">tns:Add</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="field_xmlns">http://tempuri.org/</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:intA</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">int</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/</value>
+            <value name="form_qualified">true</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:intB</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">int</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/</value>
+            <value name="form_qualified">true</value>
+            <value name="is_global">false</value>
+          </record>
+        </array>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+      </record>
+    </record>
+  </array>
+</Values>

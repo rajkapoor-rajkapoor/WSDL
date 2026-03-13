@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">WSDL:Calculator2</value>
+  <value name="node_pkg">WSDL</value>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://example.com/</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5557/</value>
+      <value name="locationURI">WSDL.Calculator2?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5557/</value>
+      <value name="locationURI">WSDL.Calculator2?xsd=xsd0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">2</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">http://calculator-webservice.mybluemix.net/calculator?wsdl</value>
+  <value name="WSDLURL">http://host.docker.internal:5557/ws/WSDL:Calculator2?WSDL</value>
+  <value name="definitionName">CalculatorService</value>
+  <value name="version">V_10_7</value>
+  <value name="schemaDomain">9c68a508134d42029f5423960a7215a7</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">CalculatorPortBinding</value>
+      <value name="portAddress">http://calculator-webservice.mybluemix.net/calculator</value>
+      <value name="bindingName">CalculatorPortBinding</value>
+      <value name="bindingStyle">document</value>
+      <value name="bindingUse">literal</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">CalculatorPort</value>
+      <value name="portTypeName">Calculator</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="">subtract</value>
+        <value name="">multiply</value>
+        <value name="">add</value>
+        <value name="">divide</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">subtract</value>
+      <value name="serviceName">WSDL.Calculator2_.connectors:Calculator_subtract</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_subtract_Input</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_subtract_Input</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_subtract_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/subtractRequest</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_subtract_Output</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_subtract_Output</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_subtract_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/subtractResponse</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">multiply</value>
+      <value name="serviceName">WSDL.Calculator2_.connectors:Calculator_multiply</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_multiply_Input</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_multiply_Input</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_multiply_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/multiplyRequest</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_multiply_Output</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_multiply_Output</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_multiply_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/multiplyResponse</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">add</value>
+      <value name="serviceName">WSDL.Calculator2_.connectors:Calculator_add</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_add_Input</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_add_Input</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_add_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/addRequest</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_add_Output</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_add_Output</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_add_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/addResponse</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">divide</value>
+      <value name="serviceName">WSDL.Calculator2_.connectors:Calculator_divide</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_divide_Input</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_divide_Input</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_divide_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/divideRequest</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://example.com/:Calculator_divide_Output</value>
+          <value name="docType">WSDL.Calculator2_.docTypes:Calculator_divide_Output</value>
+          <value name="nsOwner">WSDL.Calculator2_.docTypes:Calculator_divide_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://example.com/Calculator/divideResponse</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="wsp">http://www.w3.org/ns/ws-policy</value>
+    <value name="tns">http://example.com/</value>
+    <value name="wsp1_2">http://schemas.xmlsoap.org/ws/2004/09/policy</value>
+    <value name="wsu">http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="wsam">http://www.w3.org/2007/05/addressing/metadata</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">true</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <Boolean name="cmCompliant">true</Boolean>
+  <Boolean name="cmLax">false</Boolean>
+  <Boolean name="cmPreserve">false</Boolean>
+  <record name="userDefinedURIReferencePrefixes" javaclass="com.wm.util.Values">
+    <value name="http://example.com/">tns</value>
+  </record>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <value name="originURI">http://calculator-webservice.mybluemix.net/calculator?wsdl</value>
+  <value name="modifiable">false</value>
+  <value name="externalServiceName">{http://example.com/}CalculatorService</value>
+  <null name="policyAttachmentList"/>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>

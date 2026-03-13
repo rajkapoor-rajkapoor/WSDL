@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">WSDL:GoogleWeather</value>
+  <value name="node_pkg">WSDL</value>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">true</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5557/</value>
+      <value name="locationURI">WSDL.GoogleWeather?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">file:/C:/Users/RAJKA/OneDrive - Software AG/Personal/Programs/googleweather.wsdl</value>
+  <value name="WSDLURL">http://host.docker.internal:5557/ws/WSDL:GoogleWeather?WSDL</value>
+  <value name="definitionName">GoogleWeather</value>
+  <value name="version">V_10_7</value>
+  <value name="schemaDomain">60c0623a11d2430ca0a2a7391e9488f5</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">ndfdXMLBinding</value>
+      <value name="bindingName">ndfdXMLBinding</value>
+      <value name="bindingStyle">rpc</value>
+      <value name="bindingUse">encoded</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">ndfdXMLPort</value>
+      <value name="portTypeName">ndfdXMLPortType</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">https</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlTimeSeries">GmlTimeSeries</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListSquare">LatLonListSquare</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListZipCode">LatLonListZipCode</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgen">NDFDgen</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenByDay">NDFDgenByDay</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListCityNames">LatLonListCityNames</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#CornerPoints">CornerPoints</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenLatLonList">NDFDgenLatLonList</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListLine">LatLonListLine</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlLatLonList">GmlLatLonList</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListSubgrid">LatLonListSubgrid</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenByDayLatLonList">NDFDgenByDayLatLonList</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgen</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:NDFDgen</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgen_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgen_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgen_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgen_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgen_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgen_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgenLatLonList</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:NDFDgenLatLonList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenLatLonList_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenLatLonList_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListSubgrid</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:LatLonListSubgrid</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSubgrid_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSubgrid_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListLine</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:LatLonListLine</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListLine_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListLine_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListLine_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListLine_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListLine_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListLine_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListZipCode</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:LatLonListZipCode</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListZipCode_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListZipCode_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListZipCode_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListZipCode_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListZipCode_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListZipCode_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListCityNames</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:LatLonListCityNames</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListCityNames_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListCityNames_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListCityNames_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListCityNames_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListCityNames_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListCityNames_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListSquare</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:LatLonListSquare</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSquare_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSquare_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSquare_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSquare_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSquare_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_LatLonListSquare_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">CornerPoints</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:CornerPoints</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_CornerPoints_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_CornerPoints_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_CornerPoints_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_CornerPoints_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_CornerPoints_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_CornerPoints_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">GmlLatLonList</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:GmlLatLonList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlLatLonList_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlLatLonList_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlLatLonList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlLatLonList_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlLatLonList_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlLatLonList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">GmlTimeSeries</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:GmlTimeSeries</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlTimeSeries_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlTimeSeries_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlTimeSeries_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlTimeSeries_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlTimeSeries_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_GmlTimeSeries_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgenByDay</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:NDFDgenByDay</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDay_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDay_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDay_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDay_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDay_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDay_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgenByDayLatLonList</value>
+      <value name="serviceName">WSDL.GoogleWeather_.services:NDFDgenByDayLatLonList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDayLatLonList_Input</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Input</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDayLatLonList_Output</value>
+          <value name="docType">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Output</value>
+          <value name="nsOwner">WSDL.GoogleWeather_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="tns">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="SOAP-ENC">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="SOAP-ENV">http://schemas.xmlsoap.org/soap/envelope/</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="xsi">http://www.w3.org/2001/XMLSchema-instance</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">true</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <record name="userDefinedURIReferencePrefixes" javaclass="com.wm.util.Values">
+    <value name="http://schemas.xmlsoap.org/wsdl/">wsdl</value>
+    <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">tns</value>
+  </record>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <value name="originURI">file://C:\Users\RAJKA\OneDrive - Software AG\Personal\Programs\googleweather.wsdl</value>
+  <value name="modifiable">false</value>
+  <value name="externalServiceName">{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}ndfdXML</value>
+  <null name="policyAttachmentList"/>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>
